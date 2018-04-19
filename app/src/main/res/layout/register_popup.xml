@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <ProgressBar
+        android:id="@+id/pro"
+        style="?android:attr/progressBarStyle"
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:visibility="invisible"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+
+
+    <com.uactiv.widgets.CustomTextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:gravity="left"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="@string/oops_we_did_not_get_your_email_address_please_enter_your_email_to_complete_registration"
+        android:textSize="20sp"
+        custom:typeface="Brandon_bld" />
+
+
+        <RelativeLayout
+        android:id="@+id/editUrl_lay"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView15"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="18dp"
+        android:background="@drawable/link_text_box"
+        android:gravity="center|left"
+        android:padding="@dimen/dp_5"
+        android:textAlignment="center">
+
+        <LinearLayout
+            android:id="@+id/lin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_30"
+            android:layout_marginRight="@dimen/dp_30">
+
+            <com.uactiv.widgets.CustomEditText
+                android:id="@+id/edt_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:background="@color/transparent"
+                android:clickable="false"
+                android:hint="Enter your Email Id"
+                android:layout_gravity="left"
+                android:editable="false"
+                android:ems="15"
+                android:gravity="center_horizontal"
+                android:inputType="textEmailAddress"
+                android:text=""
+                android:textColor="@color/share_textcolor"
+                android:textColorHint="@color/share_textcolor"
+                android:textSize="@dimen/text_size_2"
+                custom:typeface="Brandon_reg"></com.uactiv.widgets.CustomEditText>
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+        <com.uactiv.widgets.CustomButton
+        android:id="@+id/button6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editUrl_lay"
+        android:layout_gravity="center"
+        android:layout_centerHorizontal="true"
+        android:textSize="18sp"
+        android:layout_marginTop="12dp"
+        android:text="Done"
+        android:textColor="@color/white"
+        android:background="#1CD591"
+        android:textAllCaps="false"
+        custom:typeface="Brandon_reg" />
+
+    </LinearLayout>
+</RelativeLayout>
